@@ -24,9 +24,14 @@
     </div>
 
     <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', saiu)
+
         function clicar() {
-            var a = window.document.getElementById('area')
-            a.innerText = 'Clicou foi, hahayyy leu teu cu é meu'
+            a.innerText = 'Leu teu cu é meu'
+        }
         function entrar() {
             a.innerText = 'Entrou foi, agora clica em mim safado vai'
         }
