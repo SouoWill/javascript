@@ -11,23 +11,29 @@
         <h1>Verificador de idade</h1>
     </header>
     <section>
-        <div>
-            <label for="ano">Ano de Nascimento:</label>
-            <input type="number" name="ano" id="ano" required>
+        <div class="div">
+            <div>
+                <label for="ano">Ano de Nascimento:</label>
+                <input type="number" name="ano" id="ano" required>
+            </div>
+            <div>
+                Sexo:
+                <input type="radio" name="sexo" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="sexo" id="fem">
+                <label for="fem">Feminino:</label>
+            </div>
+            <div>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </div>
         </div>
-        <div>
-            Sexo:
-            <input type="radio" name="sexo" id="masc" checked>
-            <label for="masc">Masculino</label>
-            <input type="radio" name="sexo" id="fem">
-            <label for="fem">Feminino:</label>
-        </div>
-        <div>
-            <input type="button" value="Verificar" onclick="verificar()">
-        </div>
-
-        <div id="res">
-            RESULTADOS
+        <div class="res-container">
+            <div id="res">
+                <p class="p">aguardando informações...</p>
+            </div>
+            <div id="tamanho">
+                <img id="tamanho-img">
+            </div>
         </div>
     </section>
     <footer>
