@@ -12,11 +12,12 @@
     </header>
     <section>
         <div>
-            <p>Início: </p>
-            <p>Fim: </p>
-            <p>Passo: </p>
+            <p>Início: <input type="number" name="inicio" id="inicio"></p>
+            <p>Fim: <input type="number" name="fim" id="fim"></p>
+            <p>Passo: <input type="number" name="passo" id="passo"></p>
+            <input type="button" value="contar" onclick="contar()">
         </div>
-        <div>
+        <div id="res">
             <p class="preparando">Preparando a contagem...</p>
         </div>
     </section>
