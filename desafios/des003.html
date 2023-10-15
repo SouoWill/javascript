@@ -6,22 +6,23 @@
     <title>Document</title>
     <link rel="stylesheet" href="arquivos-des003/style.css">
 </head>
-<body onload="carregar()">
+<body>
     <header>
-        <h1>Hora do Dia</h1>
+        <h1>Tabuada</h1>
     </header>
     <section>
-        <div id="msg">
-            aqui vai aparecer a hora...
+        <div >
+            <p>Número: <input type="number" name="numero" id="numero"></p>
+            <input type="button" value="gerar tabuada" onclick="tabuada()">
         </div>
-        <div id="foto">
-            <img id="imagem" src="estilos-des001manha.png" alt="">
+        <div id="res">
+            <select name="tabuada" id="tabuada" size="10px"></select>
         </div>
     </section>
     <footer>
         <p>&copy; De Will para CursoemVideo</p>
     </footer>
 
-    <script src="estilos-des001/script.js"></script>
+    <script src="arquivos-des003/script.js"></script>
 </body>
 </html>
