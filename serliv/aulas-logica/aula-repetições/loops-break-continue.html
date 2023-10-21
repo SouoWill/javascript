@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        let num = prompt("Digite um número")
+        let indice = 0
+
+        while(indice <= 10) {
+            document.write(`${indice} x ${num} = ${indice * num} <br>`)
+            indice++
+        }
+
+        document.write('fim das repetições while (enquanto) <br>')
+        
+        do {
+            if(num > 10) {
+                window.alert('Digitou numero maior que 10.')
+                break
+            }
+            document.write(`${indice} x ${num} = ${indice * num} <br>`)
+            indice++
+        } while(indice <= 10)
+        
+        document.write('fim das repetições do while (faça, enquanto) <br>')
+
+        for(let j = 0; j <= 10; j++){
+            if(j === 5) {
+                continue
+            }
+            document.write(`${j} x ${num} = ${j * num} <br>`)
+        }
+        
+        document.write('fim das repetições for (para) <br>')
+        /*document.write(`1 x ${num} = ${1 * num} <br>`)
+        document.write(`2 x ${num} = ${2 * num} <br>`)
+        document.write(`3 x ${num} = ${3 * num} <br>`)
+        document.write(`4 x ${num} = ${4 * num} <br>`)
+        document.write(`5 x ${num} = ${5 * num} <br>`)
+        document.write(`6 x ${num} = ${6 * num} <br>`)*/
+    </script>
+</body>
+</html>
