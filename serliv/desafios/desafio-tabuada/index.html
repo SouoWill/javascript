@@ -13,11 +13,15 @@
     <main>
         <label for="numero">Insira o número da tabuada:</label>
         <input type="number" name="numero" id="numero">
-        <div>
-            <input type="button" value="Mostrar tabuada" onclick="mostrarTabuada()">
-            <input type="button" value="Limpar tabuada">
+
+        <input type="button" value="Mostrar tabuada" id="openPopup" onclick="mostrarTabuada()">
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" id="closePopup">&times;</span>
+                <p id="tabuada"></p>
+            </div>
         </div>
-        <div id="output"><p>Aguardando o número...</p></div>
     </main>
     <footer>
         <h2 class="h">de WILL para SERLIV</h2>
