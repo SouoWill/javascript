@@ -8,7 +8,7 @@ function mostrarTabuada() {
     if (isNaN(numero)) {
         window.alert('Por favor, insira um número válido.')
     } else {
-        for (let i = 1; i <= 10; i++) {
+        for (let i = 1; i <= 1000; i++) {
             const resultado = numero * i;
             tabuada.innerHTML += `${numero} x ${i} = ${resultado}<br>`;
         }

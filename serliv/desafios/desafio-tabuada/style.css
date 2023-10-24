@@ -69,16 +69,31 @@ footer h2 {
 .popup-content {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
+    height: 200px;
     width: clamp(350px, 60%, 500px);
     position: relative;
     background-color: #fff;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.popup-content::-webkit-scrollbar {
+    width: 5px;
+    background-color: #cccccc7a;
+}
+
+.popup-content::-webkit-scrollbar-thumb {
+    background-color: black;
+    height: 50px;
+    border-radius: 40px;
 }
 
 .close {
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 10px;
-    font-size: 20px;
+    font-size: 50px;
     cursor: pointer;
+    color: white;
 }
