@@ -37,8 +37,9 @@ main {
     justify-content: space-evenly;
 }
 
-main h2 {
+main label {
     font-size: 18px;
+    font-weight: 600;
 }
 
 #output p {
