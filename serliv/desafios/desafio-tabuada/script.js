@@ -15,10 +15,6 @@ function mostrarTabuada() {
     }
 }
 
-function limparTabuada() {
-    tabuada.innerHTML = '';
-}
-
 //popup
 
 const openPopupButton = document.getElementById("openPopup");
