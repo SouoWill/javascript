@@ -53,6 +53,15 @@ footer h2 {
 
 /* dfsfd */
 
+#openPopup {
+    padding: 10px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.733);
+    color: white;
+    cursor: pointer;
+}
+
 .popup {
     display: none;
     align-items: center;
