@@ -2,7 +2,6 @@ function mostrarTabuada() {
     const numero = parseInt(document.getElementById('numero').value);
     const tabuada = document.getElementById('tabuada');
     
-    // Limpa o conteúdo anterior da div
     tabuada.innerHTML = '';
     
     if (isNaN(numero)) {
