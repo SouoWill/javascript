@@ -1,6 +1,12 @@
-const nomes = ['joao', 'juan', 'thayna', 'ygor']
+const pessoa = {
+    nome: 'juan',
+    idade: 17,
+    'email': 'juan@gmail.com'
+}
 
-//length serve para ler quantos valores tem dentro de um array
-for(let i = 0; i < nomes.length; i++) {
-    console.log(`${i}: Nome é ${nomes[i]}`)
+//prop e cada propiedade e não o seu valor
+
+for(let prop in pessoa) {
+    console.log(prop)
+    console.log(pessoa[prop])
 }
