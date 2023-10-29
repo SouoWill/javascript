@@ -1,3 +1,5 @@
+//a palavra this representa o proprio objeto
+
 const produto = {
     nome: 'caneta',
     qtd: 10,
@@ -7,11 +9,20 @@ const produto = {
             return 'quantidade não disponivel'
         }
         this.qtd -= n
+    },
+    teste1: function() {
+        console.log(this)
+    },
+    teste2: () =>{
+        console.log(this)
     }
 }
 
 produto.comprar(3)
-console.log(produto)
+//console.log(produto)
 
 produto.comprar(13)
-console.log(produto)
+//console.log(produto)
+
+produto.teste1()
+produto.teste2()
