@@ -5,11 +5,16 @@ function generateRandomNumber(max) {
 }
 
 let arr = []
-
+let i = 0
 while(arr.length <= 20) {
+    i++
     let randomNumber = generateRandomNumber(30)
-    console.log(randomNumber)
 
-    if(arr.indexOff)
+    if(arr.indexOf(randomNumber) < 0) {
+        arr.push(randomNumber)
+    }
 }
+
+console.log(arr)
+console.log('o loop foi executado', i, 'vezes')
 
