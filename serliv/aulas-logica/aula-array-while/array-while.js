@@ -9,5 +9,7 @@ let arr = []
 while(arr.length <= 20) {
     let randomNumber = generateRandomNumber(30)
     console.log(randomNumber)
+
+    if(arr.indexOff)
 }
 
