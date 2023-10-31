@@ -8,5 +8,15 @@
 <body>
     
     <script src="sum.js"></script>
+
+    <script>
+        let soma = ''
+        try { //tente fazer
+            let soma = sum(3, 'a')
+        } catch(e) { // se der erro e passado pra esse bloco
+            alert('Ocorreu um erro')
+            console.log(e.message)
+        }
+    </script>
 </body>
 </html>
