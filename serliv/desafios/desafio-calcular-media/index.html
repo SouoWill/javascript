@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Média do aluno</h1>
+    </header>
+    <main>
+        <form>
+            <label>
+                <p>Nota prova:</p>
+                <input type="number" name="nota" id="nota1" min="0" max="10" step=".5" required>
+            </label>
+
+            <label>
+                <p>Nota atividades:</p>
+                <input type="number" name="nota" id="nota2" min="0" max="10" step=".5" required>
+            </label>
+
+            <a href="#" onclick="calcularMedia()"><button>Calcular Média</button></a>
+        </form>
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" id="closePopup">&times;</span>
+                <p id="media"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h2>de Will para Serliv</h2>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
