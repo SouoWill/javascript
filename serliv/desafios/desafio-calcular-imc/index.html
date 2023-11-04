@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calcular IMC</h1>
+    </header>
+    <main>
+        <form>
+            <label>
+                <p>Peso:</p>
+                <input type="number" name="peso" id="peso" min="0" max="150" required>
+            </label>
+
+            <label>
+                <p>Altura:</p>
+                <input type="number" name="altura" id="altura" min="0" max="3.00" step=".01" required>
+            </label>
+
+            <a onclick="calcularIMC()"><button>Calcular IMC</button></a>
+        </form>
+
+        <div id="imc">Aguardando dados...</div>
+    </main>
+    <footer>
+        <h2>de Will para Serliv</h2>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
