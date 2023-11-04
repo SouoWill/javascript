@@ -4,6 +4,12 @@ function calcularIMC() {
     let imc = document.getElementById('imc')
     let resIMC =  peso / (altura * altura)
 
+    if(peso > 150 || peso < 0 || altura > 3 || altura < 1) 
+    {
+        alert('Informe apenas dados válidos.')
+        return
+    }
+
     if(resIMC >= 16.0 && resIMC <= 16.9) 
     {
         imc.innerHTML = `<p>Seu IMC é: <strong>${resIMC.toFixed(1)}</strong> <br> Você está muito abaixo do peso!</p>`
