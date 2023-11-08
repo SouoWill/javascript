@@ -39,7 +39,7 @@ body{
     width: 100%;
     padding: 10px;
     color: white;
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.51);
     box-sizing: border-box;
 }
 .top-bar p{
