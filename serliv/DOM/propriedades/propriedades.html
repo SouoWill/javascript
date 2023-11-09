@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title1">Curso de JS do SERLIV</h1>
+
+    <main class="cmain" id="idmain">
+        <h2>Subtitulo</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore recusandae, unde nisi molestias aliquam aspernatur iusto vero quas tenetur esse in facilis fugit harum doloribus libero perspiciatis ducimus sapiente culpa.</p>
+    </main>
+
+    <form method="get">
+        <input type="text" name="txtNome" id="txtNome" placeholder="nome">
+        <input type="text" name="txtEmail" id="txtEmail" placeholder="email" maxlength="10"> <br> <br>
+        <input type="checkbox" name="contrato" id="contrato">
+        <label for="contrato">Li e aceito o contrato.</label><br> <br>
+        <textarea name="" id="" cols="30" rows="10" readonly>
+            contrato
+        </textarea>
+    </form>
+
+    <script>
+        const txtNome = document.querySelector('#txtNome')
+        const txtEmail = document.querySelector('#txtEmail')
+        const labelContrato = document.querySelector("label[for='contrato']")
+
+        txtNome.value = 'Juan'
+        txtNome.disabled = true
+
+        console.log(txtNome.value)
+        console.log(labelContrato.htmlFor)
+        console.log(txtEmail.maxLength)
+
+        txtEmail.readOnly = true
+    </script>
+</body>
+</html>
