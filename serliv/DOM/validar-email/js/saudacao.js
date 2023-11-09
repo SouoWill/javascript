@@ -1,4 +1,6 @@
+const msgFeedback = document.getElementById('newsletterFeedback')
+
 function validarEmail() {
     const txtEmail = document.getElementById('txtEmail').value
-    console.log(txtEmail)
+    msgFeedback.innerHTML = '<p>Validado com sucesso!'
 }
