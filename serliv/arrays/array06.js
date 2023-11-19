@@ -15,4 +15,4 @@ console.log(soma)
 const nomes = ['juan', 'thayna', 'victor', 'vitoria']
 let nomesPorOrdem = nomes.reduce( function(nomes, nomeAtual){
     let primeiraLetra = nomeAtual[0]
-}, {} )
+ }, {} )
